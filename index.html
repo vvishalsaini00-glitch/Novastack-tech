@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Novastack Technology builds modern websites, apps, logos, and CRM solutions with premium design and performance."
+    />
+    <meta
+      name="keywords"
+      content="website development, app development, CRM development, UI/UX design, logo design, digital agency"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Novastack Technology | Premium Digital Solutions" />
+    <meta
+      property="og:description"
+      content="Professional website, app, CRM, and branding services for startups and growing businesses."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Novastack Technology" />
+    <meta name="theme-color" content="#0b1020" />
+    <title>Novastack Technology</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Novastack Technology",
+        "url": "https://novastacktechnology.com",
+        "sameAs": [
+          "https://www.instagram.com/novastack.technologies"
+        ]
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="loader">
+      <div class="loader-ring"></div>
+      <span>Novastack</span>
+    </div>
+
+    <canvas id="particle-canvas"></canvas>
+    <div class="cursor-glow"></div>
+
+    <header class="header">
+      <nav class="nav container">
+        <a class="logo" href="#home" aria-label="Novastack Technology homepage">
+          <img class="logo-image" src="assets/logo.svg" alt="Novastack logo" />
+          <span class="logo-text">Novastack</span>
+        </a>
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <div class="dropdown">
+            <a class="dropdown-toggle" href="#services">Services</a>
+            <div class="dropdown-menu">
+              <a href="#services">Website Development</a>
+              <a href="#services">App Development</a>
+              <a href="#services">UI/UX Design</a>
+              <a href="#services">Logo Design</a>
+              <a href="#services">CRM Development</a>
+              <a href="#services">Website Maintenance</a>
+            </div>
+          </div>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#process">Process</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#blog">Blog</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <button class="theme-toggle" aria-label="Toggle theme">
+            <span class="theme-icon">☀</span>
+          </button>
+          <a class="btn btn-primary nav-btn" href="#contact">Get Quote</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-content container reveal">
+          <div>
+            <span class="eyebrow">Digital Transformation Studio</span>
+            <h1>Building Powerful Websites, Apps & CRM Solutions</h1>
+            <p>
+              Transform your business with modern digital experiences that blend
+              strategy, design, and performance.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contact">Get Started</a>
+              <a class="btn btn-secondary" href="#portfolio">View Portfolio</a>
+            </div>
+            <div class="logo-strip">
+              <span>Shopify</span>
+              <span>Notion</span>
+              <span>Slack</span>
+              <span>Stripe</span>
+            </div>
+            <div class="hero-stats">
+              <div>
+                <strong>98%</strong>
+                <span>Satisfaction</span>
+              </div>
+              <div>
+                <span>Support Available from 9:00 AM to 7:00 PM (Monday to Saturday)</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <canvas id="three-scene" class="three-scene" aria-hidden="true"></canvas>
+            <div class="shape-orb orb-one"></div>
+            <div class="shape-orb orb-two"></div>
+            <div class="dashboard-card main-card pulse-card">
+              <div class="card-top">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="graph-panel">
+                <div class="graph-bars">
+                  <span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <div class="chart-circle"></div>
+                <div class="media-overlay">
+                  <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80" alt="Team working together" />
+                </div>
+              </div>
+            </div>
+            <div class="dashboard-card side-card float-one">
+              <div class="mini-chart"></div>
+            </div>
+            <div class="dashboard-card side-card float-two">
+              <div class="mini-stats"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services section" id="services">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Our Services</span>
+            <h2>Everything your business needs to grow digitally</h2>
+          </div>
+          <div class="services-grid">
+            <article class="service-card reveal">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h5A2.5 2.5 0 0 1 14 6.5v11A2.5 2.5 0 0 1 11.5 20h-5A2.5 2.5 0 0 1 4 17.5v-11Z"/>
+                  <path d="M17.5 8H20A2.5 2.5 0 0 1 22.5 10.5v7A2.5 2.5 0 0 1 20 20h-2.5"/>
+                  <path d="M9 8h2.5M9 12h2.5M9 16h2.5"/>
+                </svg>
+              </div>
+              <h3>Website Development</h3>
+              <p>Custom websites built for speed, SEO performance, and strong conversions.</p>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="16" rx="3"/>
+                  <path d="M3 10h18M12 4v16"/>
+                </svg>
+              </div>
+              <h3>App Development</h3>
+              <p>High-quality mobile and web apps designed to scale with your business.</p>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 3 4 7v5c0 4.4 2.7 8.4 8 9 5.3-.6 8-4.6 8-9V7l-8-4Z"/>
+                  <path d="m9.5 12 1.7 1.7 3.8-4.2"/>
+                </svg>
+              </div>
+              <h3>UI/UX Design</h3>
+              <p>Elegant interfaces and intuitive flows that keep users engaged longer.</p>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 3.5 4 7v5c0 3.8 2 7.2 5 8.8L12 22l3-1.2c3-1.6 5-5 5-8.8V7l-8-3.5Z"/>
+                  <path d="M9 12h6M12 9v6"/>
+                </svg>
+              </div>
+              <h3>Logo Design</h3>
+              <p>Memorable brand identities crafted to stand out across every platform.</p>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 18V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12"/>
+                  <path d="M7 15h10M7 11h5M7 7h10"/>
+                </svg>
+              </div>
+              <h3>CRM Development</h3>
+              <p>Smart CRM solutions that automate workflows, reporting, and customer follow-up.</p>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 5v14M5 12h14"/>
+                  <circle cx="12" cy="12" r="9"/>
+                </svg>
+              </div>
+              <h3>Website Maintenance</h3>
+              <p>Reliable updates, security checks, and performance support to keep your site running smoothly.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio section" id="portfolio">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Portfolio</span>
+            <h2>Selected work that delivers results</h2>
+          </div>
+          <div class="portfolio-grid">
+            <article class="portfolio-card reveal tall">
+              <div class="portfolio-preview preview-1"></div>
+              <div class="portfolio-info">
+                <span>Website</span>
+                <h3>Luxury Brand Landing Page</h3>
+              </div>
+            </article>
+            <article class="portfolio-card reveal">
+              <div class="portfolio-preview preview-2"></div>
+              <div class="portfolio-info">
+                <span>App</span>
+                <h3>Fitness Tracking App</h3>
+              </div>
+            </article>
+            <article class="portfolio-card reveal">
+              <div class="portfolio-preview preview-3"></div>
+              <div class="portfolio-info">
+                <span>CRM</span>
+                <h3>Sales Analytics Dashboard</h3>
+              </div>
+            </article>
+            <article class="portfolio-card reveal">
+              <div class="portfolio-preview preview-4"></div>
+              <div class="portfolio-info">
+                <span>Branding</span>
+                <h3>Identity System Redesign</h3>
+              </div>
+            </article>
+            <article class="portfolio-card reveal">
+              <div class="portfolio-preview preview-5"></div>
+              <div class="portfolio-info">
+                <span>Startup</span>
+                <h3>Growth Analytics Platform</h3>
+              </div>
+            </article>
+            <article class="portfolio-card reveal">
+              <div class="portfolio-preview preview-6"></div>
+              <div class="portfolio-info">
+                <span>E-commerce</span>
+                <h3>Online Store UI Refresh</h3>
+              </div>
+            </article>
+            <article class="portfolio-card reveal">
+              <div class="portfolio-preview preview-7"></div>
+              <div class="portfolio-info">
+                <span>Dashboard</span>
+                <h3>Admin Panel Optimization</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="process section" id="process">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Our Process</span>
+            <h2>From idea to launch with confidence</h2>
+          </div>
+          <div class="timeline reveal">
+            <div class="timeline-step">
+              <div class="timeline-icon">🔎</div>
+              <span>Discover</span>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-icon">🗺️</div>
+              <span>Plan</span>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-icon">🎨</div>
+              <span>Design</span>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-icon">💻</div>
+              <span>Develop</span>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-icon">🚀</div>
+              <span>Launch</span>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-icon">🛟</div>
+              <span>Support</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing section" id="pricing">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Pricing</span>
+            <h2>Flexible packages for every stage</h2>
+          </div>
+          <div class="pricing-grid">
+            <article class="pricing-card reveal">
+              <h3>Basic</h3>
+              <p class="price">$99</p>
+              <ul>
+                <li>Landing Page</li>
+                <li>Basic Design</li>
+                <li>Mobile Responsive</li>
+              </ul>
+              <a class="btn btn-secondary" href="#contact">Get Quote</a>
+            </article>
+            <article class="pricing-card featured reveal">
+              <span class="badge">Most Popular</span>
+              <h3>Standard</h3>
+              <p class="price">$199</p>
+              <ul>
+                <li>Multi-page Website</li>
+                <li>Custom UI</li>
+                <li>SEO Ready</li>
+              </ul>
+              <a class="btn btn-primary" href="#contact">Get Quote</a>
+            </article>
+            <article class="pricing-card reveal">
+              <h3>Premium</h3>
+              <p class="price">$349</p>
+              <ul>
+                <li>Full Website</li>
+                <li>App + CRM</li>
+                <li>Premium Support</li>
+                <li>Advanced Animations</li>
+              </ul>
+              <a class="btn btn-secondary" href="#contact">Get Quote</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog section" id="blog">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Blog</span>
+            <h2>Insights for smarter digital growth</h2>
+          </div>
+          <div class="blog-grid">
+            <article class="blog-card reveal">
+              <span>Web Trends</span>
+              <h3>Top design trends shaping modern websites in 2026</h3>
+            </article>
+            <article class="blog-card reveal">
+              <span>Business Growth</span>
+              <h3>How CRM systems improve customer retention and revenue</h3>
+            </article>
+            <article class="blog-card reveal">
+              <span>Technology</span>
+              <h3>Why performance-first development boosts conversions</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="container about-grid">
+          <div class="reveal">
+            <span class="eyebrow">About</span>
+            <h2>We create digital products that scale with your business</h2>
+            <p>
+              Novastack Technology is a creative tech partner focused on helping
+              startups and enterprise teams build premium digital experiences.
+            </p>
+            <div class="about-points">
+              <div>
+                <h4>Mission</h4>
+                <p>Deliver intelligent, beautiful, and growth-driven solutions.</p>
+              </div>
+              <div>
+                <h4>Why Choose Us</h4>
+                <p>Fast delivery, transparent process, and future-ready technology.</p>
+              </div>
+            </div>
+          </div>
+          <div class="founder-card reveal">
+            <div class="founder-badge">V</div>
+            <h3>Vishal Saini</h3>
+            <p>Founder & CEO</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="container contact-grid">
+          <div class="reveal">
+            <span class="eyebrow">Appointment</span>
+            <h2>Book a strategy call with our team</h2>
+            <div class="contact-details">
+              <a href="tel:+919528437315">+91 9528437315</a>
+              <a href="mailto:vvishalsaini00@gmail.com">vvishalsaini00@gmail.com</a>
+            </div>
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="https://wa.me/919528437315" target="_blank" rel="noopener noreferrer">WhatsApp Chat</a>
+              <a class="btn btn-secondary" href="https://www.instagram.com/novastack.technologies" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a class="btn btn-secondary" href="tel:+919528437315">Click to Call</a>
+            </div>
+          </div>
+          <form
+            class="contact-form reveal"
+            id="appointmentForm"
+            action="https://formsubmit.co/vvishalsaini00@gmail.com"
+            method="POST"
+          >
+            <div class="form-grid">
+              <div>
+                <label for="full_name">Full Name</label>
+                <input id="full_name" type="text" name="full_name" placeholder="John Doe" required />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" placeholder="john@example.com" required />
+              </div>
+              <div>
+                <label for="phone">Phone Number</label>
+                <input id="phone" type="tel" name="phone" placeholder="+91 99999 99999" required />
+              </div>
+              <div>
+                <label for="company_name">Company Name</label>
+                <input id="company_name" type="text" name="company_name" placeholder="Your company" />
+              </div>
+              <div>
+                <label for="service_required">Service Required</label>
+                <select id="service_required" name="service_required" required>
+                  <option value="">Select a service</option>
+                  <option>Website Development</option>
+                  <option>App Development</option>
+                  <option>UI/UX Design</option>
+                  <option>Logo Design</option>
+                  <option>CRM Development</option>
+                  <option>Website Maintenance</option>
+                </select>
+              </div>
+              <div>
+                <label for="budget">Budget</label>
+                <select id="budget" name="budget" required>
+                  <option value="">Select budget</option>
+                  <option>$500 - $1,000</option>
+                  <option>$1,000 - $3,000</option>
+                  <option>$3,000 - $7,000</option>
+                  <option>$7,000+</option>
+                </select>
+              </div>
+              <div>
+                <label for="preferred_date">Preferred Date</label>
+                <input id="preferred_date" type="date" name="preferred_date" required />
+              </div>
+              <div class="field-full">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell us about your goals and timeline" required></textarea>
+              </div>
+            </div>
+            <input type="hidden" name="_subject" value="New appointment request from Novastack website" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="https://novastacktechnology.com/" />
+            <div class="form-status" aria-live="polite"></div>
+            <button type="submit" class="btn btn-primary">Book Appointment</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="map-section">
+        <div class="map-panel reveal">
+          <iframe
+            src="https://www.google.com/maps?q=India&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="logo footer-logo" href="#home">
+            <span class="logo-mark">N</span>
+            <span>Novastack</span>
+          </a>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div>
+          <h4>Social</h4>
+          <a href="https://www.instagram.com/novastack.technologies" target="_blank">Instagram</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">X / Twitter</a>
+        </div>
+      </div>
+      <p class="copyright">© 2026 Novastack Technology</p>
+    </footer>
+
+    <a class="whatsapp-float" href="https://wa.me/919528437315" target="_blank" aria-label="Contact on WhatsApp">
+      💬
+    </a>
+
+    <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
